@@ -2,26 +2,31 @@
  * @Main scss for (Template/Project Name)
  * @project     - Style Maven
  * @author      -
- * @created_by  - Muhammad Shahjalal Shakib
+ * @created_by  - Shakib
  * @created_at  -
  * @modified_by -
  */
 /* reset, root */
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-  font-family: "Tatsam Bengali";
+  font-family: "Roboto", sans-serif;
+  background-color: #F0EDE6;
 }
 
 :root {
-  --dark-1: #1B2622;
+  --primary-color: #2E2A2A;
+  --secondary-color: #222021;
+  --dark: #1B2622;
   --dark-2: #32403B;
   --gray-1: #65736E;
   --aliceblue: #e7efff;
@@ -47,64 +52,27 @@ body {
   --rose2: #ffe6e4;
 }
 
-/* fonts import */
-@font-face {
-  font-family: "FN Shorif Opekkha Unicode";
-  src: url("../fonts/FNShorifOpekkhaUnicode.ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Tatsam Bengali";
-  src: url("../fonts/TatsamLight.ttf");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Tatsam Bengali";
-  src: url("../fonts/TatsamBengaliDemi.woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Tatsam Bengali";
-  src: url("../fonts/TatsamMedium.ttf");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Tatsam Bengali";
-  src: url("../fonts/TatsamBold.ttf");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.font-primary {
-  font-family: "FN Shorif Opekkha Unicode";
+.primary-color {
+  color: #2E2A2A;
 }
 
-.f-s-300 {
-  font-family: "Tatsam Bengali";
-  font-weight: 300;
+.secondary-color {
+  color: #2E2A2A;
 }
 
-.f-s-400 {
-  font-family: "Tatsam Bengali";
+.font-primary-400 {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
-.f-s-500 {
-  font-family: "Tatsam Bengali";
+.font-primary-500 {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
-.f-s-700 {
-  font-family: "Tatsam Bengali";
-  font-weight: 700;
+.font-Secondary-400 {
+  font-family: "Oranienbaum", serif;
+  font-weight: 400;
 }
 
 /* fonts import -END */
@@ -126,7 +94,7 @@ a {
 /* reset, root - END */
 @media (min-width: 1400px) {
   .container {
-    max-width: 1360px !important;
+    max-width: 1337px !important;
   }
 }
 img {
@@ -135,213 +103,44 @@ img {
 }
 
 /* helper , base classes */
-.bg-primary {
-  background-color: #F5FAF8 !important;
-}
-
-.text-primary {
-  background: linear-gradient(93deg, #42B057 0%, #189F71 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.text-dark-1 {
-  color: #1B2622;
-}
-
-.text-dark-2 {
-  color: #32403B;
-}
-
-.text-gray-1 {
-  color: #65736E;
-}
-
-.text-gray-4 {
-  color: #D9D9D9;
-}
-
-.green-linear-text {
-  background: linear-gradient(93deg, #42B057 0%, #189F71 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.green-linear-bg {
-  background: linear-gradient(93deg, #42B057 0%, #189F71 100%);
-}
-
-.black-linear {
-  background: linear-gradient(93deg, #1B2622 0%, #1B2622 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.fs-12 {
-  font-size: 12px;
-}
-
 .fs-14 {
   font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 1px;
 }
 
 .fs-16 {
   font-size: 16px;
 }
 
-.fs-18 {
-  font-size: 18px;
-}
-
-.fs-76 {
-  font-size: 76px;
-}
-
 .fs-22 {
   font-size: 22px;
 }
 
-.fs-20 {
-  font-size: 20px;
+.fs-24 {
+  font-size: 24px;
 }
 
-.fs-48 {
-  font-size: 48px;
+.fs-40 {
+  font-size: 40px;
 }
 
-.fs-32 {
-  font-size: 32px;
+.fs-46 {
+  font-size: 46px;
 }
 
-.lh-137 {
-  line-height: 137.5%;
-}
-
-.lh-100 {
-  line-height: 100%;
-}
-
-.lh-120 {
-  line-height: 120%;
-}
-
-.lh-145 {
-  line-height: 145.455%;
-}
-
-.lh-160 {
-  line-height: 160%;
-}
-
-.lh-130 {
-  line-height: 130%;
-}
-
-.lh-118 {
-  line-height: 118%;
-}
-
-.lh-80 {
-  line-height: 80%;
-}
-
-.lh-112 {
-  line-height: 112%;
-}
-
-.lh-130 {
-  line-height: 130%;
-}
-
-.lh-140 {
-  line-height: 140%;
-}
-
-.lh-125 {
-  line-height: 125%;
-}
-
-.lh-114 {
-  line-height: 114.286%;
-}
-
-.lh-116 {
-  line-height: 116.667%;
-}
-
-.lh-150 {
-  line-height: 150%;
-}
-
-.lh-157 {
-  line-height: 157.143%;
-}
-
-.radius-4 {
-  border-radius: 4px;
-}
-
-.radius-8 {
-  border-radius: 8px;
-}
-
-.radius-56 {
-  border-radius: 56px;
-}
-
-.radius-100 {
-  border-radius: 100px;
-}
-
-.radius-20 {
-  border-radius: 20px;
-}
-
-.radius-10 {
-  border-radius: 10px;
-}
-
-.radius-32 {
-  border-radius: 32px;
-}
-
-.p-100 {
-  padding: 100px 0 100px 0;
-}
-@media (max-width: 991px) {
-  .p-100 {
-    padding: 50px 0 50px 0;
-  }
+.fs-64 {
+  font-size: 64px;
 }
 
 .fw-400 {
   font-weight: 400;
 }
 
-.fw-medium {
-  font-weight: 500;
-}
-
-.fw-semi-medium {
-  font-weight: 400px;
-}
-
-.fw-semi-bold {
-  font-weight: 600;
-}
-
-.fw-bold {
-  font-weight: 700;
-}
-
-.fw-ultra {
-  font-weight: 800;
+.lh-120 {
+  line-height: 120%;
 }
 
 .yellow-dark-btn {
@@ -351,117 +150,126 @@ img {
 }
 
 h1 {
-  font-size: 76px;
-  font-family: "FN Shorif Opekkha Unicode";
+  color: #FFF;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 64px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 136%;
-}
-@media (max-width: 1399px) {
-  h1 {
-    font-size: 70px;
-  }
-}
-@media (max-width: 991px) {
-  h1 {
-    font-size: 60px;
-  }
+  line-height: 118.75%;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
 h2 {
-  font-size: 48px;
-  font-family: "FN Shorif Opekkha Unicode";
+  color: var(--primary-color);
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 40px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 136%;
-}
-@media (max-width: 1399px) {
-  h2 {
-    font-size: 40px;
-  }
-}
-@media (max-width: 1199px) {
-  h2 {
-    font-size: 34px;
-  }
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
-h3 {
-  font-size: 32px;
-  font-family: "FN Shorif Opekkha Unicode";
-  font-weight: 400;
-  line-height: 100%;
-  color: #1B2622;
-}
-@media (max-width: 1199px) {
-  h3 {
-    font-size: 20px;
-  }
-}
-
-h4 {
-  font-size: 24px;
-  font-family: "Tatsam Bengali";
-  font-weight: 600;
-  line-height: 130%;
-  color: #1B2622;
-}
-
-h5 {
-  font-size: 20px;
-  font-family: "Tatsam Bengali";
+.btn-black {
+  padding: 15.79px 25px 16.21px 25px;
+  color: #FFF;
+  background-color: #000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 130%;
-  color: #1B2622;
+  line-height: 160%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.btn-black:hover {
+  background-color: #333;
+  transform: translateY(-2px);
 }
 
-.green-btn {
-  padding: 12px 24px 12px 24px;
-  background: linear-gradient(93deg, #42B057 0%, #189F71 100%);
-  color: white;
-  border-radius: 4px;
-  font-size: 20px;
-  font-weight: 500;
-}
-.green-btn:hover {
-  background: linear-gradient(180deg, #42B057 0%, #189F71 100%);
-}
-@media (max-width: 1399px) {
-  .green-btn {
-    font-size: 18px;
-  }
-}
-@media (max-width: 1199px) {
-  .green-btn {
-    font-size: 16px;
-    padding: 12px 20px 12px 20px;
-  }
-}
-
-.trans-btn {
-  padding: 12px 24px 12px 24px;
+.btn-outline {
+  padding: 15.79px 25px 16.21px 25px;
+  color: #000;
   background-color: transparent;
-  border-radius: 4px;
-  font-size: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 500;
-  background: linear-gradient(93deg, #42B057 0%, #189F71 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  border: 1px solid #42B057;
-  transition: background 0.3s ease, color 0.3s ease;
+  line-height: 160%;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
-.trans-btn:hover {
-  background: #42B057;
-  color: white;
-  -webkit-background-clip: none;
-  -webkit-text-fill-color: unset;
-  border-color: #189F71;
-}
-@media (max-width: 1199px) {
-  .trans-btn {
-    font-size: 16px;
-    padding: 12px 20px 12px 20px;
-  }
+.btn-outline:hover {
+  background-color: #000;
+  color: #FFF;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* helper , base classes  - END*//*# sourceMappingURL=style.css.map */
+/* helper , base classes  - END*/
+.banner {
+  padding: 528px 0 90px 0;
+  background-image: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner .Hero-heading {
+  max-width: 600px;
+  text-align: center;
+}
+.banner .hero-buttons {
+  padding-top: 20px;
+}
+.banner .banner-subhead .Hero-heading {
+  padding-bottom: 14px;
+}
+
+.brand {
+  padding: 60px 0 60px 0;
+}
+
+.arrivals {
+  padding: 100px 0 100px 0;
+}
+.arrivals .arrivals-wrapper .arrivals-heading {
+  padding-bottom: 14px;
+}
+.arrivals .arrivals-wrapper .arrivals-subheading {
+  padding-bottom: 14px;
+}
+.arrivals .arrivals-wrapper .hero-buttons {
+  padding-bottom: 60px;
+}
+.arrivals .arrivals-wrapper .swiper {
+  width: 100%;
+  height: 100%;
+}
+.arrivals .arrivals-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrivals .arrivals-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.arrivals .arrivals-wrapper .arrivals-colors {
+  width: 20px;
+  height: 20px;
+}/*# sourceMappingURL=style.css.map */
