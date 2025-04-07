@@ -24,7 +24,7 @@ body {
     margin: 0;
     background-color: #fff;
     font-family: "Roboto", sans-serif;
-    background-color: #F0EDE6;
+    background-color: #F0EDE6 !important;
 }
 
 :root {
@@ -208,6 +208,12 @@ h2 {
         background-color: #333;
         transform: translateY(-2px);
     }
+
+    @media (max-width:375px) {
+        padding: 10px 10px;
+        font-size: 10px;
+        line-height: 100%;
+    }
 }
 
 .btn-outline {
@@ -231,10 +237,17 @@ h2 {
         transform: translateY(-3px);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     }
+
+    @media (max-width:375px) {
+        padding: 10px 10px;
+        font-size: 10px;
+        line-height: 100%;
+    }
 }
 
 
 /* helper , base classes  - END*/
+
 
 // banner start 
 .banner {
@@ -244,9 +257,33 @@ h2 {
     background-size: cover;
     background-position: center center;
 
+    @media (max-width:375px) {
+        padding: 70px 0;
+    }
+
     .Hero-heading {
         max-width: 600px;
         text-align: center;
+
+        @media (max-width:1199px) {
+            font-size: 50px;
+        }
+
+        @media (max-width:991px) {
+            font-size: 40px;
+        }
+
+        @media (max-width:767px) {
+            font-size: 38px;
+        }
+
+        @media (max-width:575px) {
+            font-size: 36px;
+        }
+
+        @media (max-width:375px) {
+            font-size: 30px;
+        }
     }
 
     .hero-buttons {
@@ -263,6 +300,11 @@ h2 {
 // brand start 
 .brand {
     padding: 60px 0 60px 0;
+
+    @media (max-width:375px) {
+        padding: 20px 0;
+    }
+
 }
 
 // brand end
@@ -270,6 +312,10 @@ h2 {
 // arrivals start 
 .arrivals {
     padding: 100px 0 100px 0;
+
+    @media (max-width:375px) {
+        padding: 20px 0;
+    }
 
     .arrivals-wrapper {
         .arrivals-heading {
@@ -309,6 +355,311 @@ h2 {
         .arrivals-colors {
             width: 20px;
             height: 20px;
+        }
+    }
+}
+
+// fashion start 
+.fashion {
+    .fashion-left {
+        @media (max-width:375px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    .fashion-item {
+        .arrivals-slide-item-image {
+            img {
+                @media (max-width:375px) {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .arrivals-slide-item-detail {
+            @media (max-width:375px) {
+                padding-bottom: 16px !important;
+                padding-top: 16px !important;
+            }
+        }
+
+        .arrivals-colors-wrapper {
+            @media (max-width:375px) {
+                justify-content: left !important;
+            }
+        }
+    }
+}
+
+// feature end 
+.features {
+    padding: 100px 0;
+
+    @media (max-width:375px) {
+        padding: 20px 0;
+    }
+
+    .feature-top {
+        padding-bottom: 100px;
+    }
+
+    .feature-main {
+        gap: 50px;
+
+        @media (max-width:375px) {
+            gap: 20px;
+        }
+
+        .first-row {
+            gap: 200px;
+
+            @media (max-width:991px) {
+                gap: 100px;
+            }
+
+            @media (max-width:575px) {
+                gap: 50px;
+            }
+        }
+    }
+
+    .feature-name {
+        @media (max-width:991px) {
+            font-size: 30px;
+        }
+
+        @media (max-width:575px) {
+            font-size: 26px;
+        }
+
+        @media (max-width:375px) {
+            font-size: 16px;
+        }
+    }
+
+
+
+
+
+
+
+}
+
+// feature end
+
+// counter start 
+.counter {
+    padding: 100px 0;
+    background-color: #E2D7D7;
+
+    @media (max-width:375px) {
+        padding: 20px 0;
+    }
+
+    .arrivals-heading {
+        padding-bottom: 24px;
+    }
+
+    .timer-group {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 25px;
+        flex-wrap: wrap;
+        padding-bottom: 24px;
+
+        .time-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .time-value {
+                font-size: 64px;
+                line-height: 100%;
+                letter-spacing: -1px;
+
+                @media (max-width:375px) {
+                    font-size: 30px;
+
+                }
+            }
+
+            .time-label {
+                font-size: 14px;
+                line-height: 120%;
+                letter-spacing: -1px;
+                margin-top: 4px;
+                color: #333;
+            }
+
+        }
+
+        .colon {
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+    }
+
+}
+
+// counter end
+
+// order details start
+.order-details {
+    .order-details-wrapper {
+        .thumbnail {
+            cursor: pointer;
+            margin-bottom: 15px;
+            border: 2px solid transparent;
+        }
+
+        .thumbnail.active {
+            border-color: #000;
+        }
+
+        .color-dot {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 2px solid #ccc;
+        }
+
+        .color-dot.active {
+            border-color: #000;
+        }
+
+        .size-btn {
+            margin-right: 10px;
+        }
+
+        .product-subhead {
+            line-height: 120%;
+            letter-spacing: -1px;
+            color: #2E2A2A;
+
+            @media (max-width:375px) {
+                margin-bottom: 5px;
+                margin-top: 15px;
+            }
+        }
+
+        .product-heading {
+            color: #2E2A2A;
+            line-height: normal;
+            letter-spacing: -2px;
+
+            @media (max-width:375px) {
+                font-size: 30px;
+            }
+        }
+
+        .order-count {
+            @media (max-width:375px) {
+                flex-direction: column;
+                justify-content: left;
+            }
+        }
+
+
+
+
+
+    }
+}
+
+// order details end
+
+// instagram start 
+.instagram {
+    padding: 100px 0;
+
+    @media (max-width:375px) {
+        padding: 20px 0;
+    }
+
+    .instagram-wrapper {
+        .section-top {
+            padding-bottom: 70px;
+
+            h2 {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        .insta-image {
+            .insta-images {
+                img {
+                    width: 100vw;
+                }
+            }
+        }
+    }
+}
+
+// instagram end
+
+// newsletter start 
+.newsletter {
+    padding: 150px 0;
+
+
+
+    .newsletter-wrapper {
+        .newsletter-heading {
+            letter-spacing: -0.92px;
+            padding-bottom: 26px;
+        }
+
+        .newsletter-details {
+            max-width: 614px;
+        }
+
+        .subscribe-box {
+            position: relative;
+            text-align: center;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url(../assets/manimage.png);
+                background-repeat: no-repeat;
+                width: 300px;
+                height: 630px;
+                top: -300px;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url(../assets/manimagew2.png);
+                width: 300px;
+                height: 630px;
+                top: -300px;
+                background-repeat: no-repeat;
+                right: 0;
+
+            }
+        }
+
+        .form-control {
+            border-radius: 0;
+            padding: 1rem;
+            font-size: 1rem;
+            box-shadow: none;
+            max-width: 631px;
+        }
+
+        .btn-dark {
+            border-radius: 0;
+            padding: 0.75rem 2rem;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            max-width: 381px;
         }
     }
 }
