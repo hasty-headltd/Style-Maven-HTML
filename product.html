@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Maven</title>
+    <!-- css Link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap cdn  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Structure Start  -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/product-image-main.png" class="product-image mb-3" alt="Main Product Image">
+                <div class="d-flex">
+                    <img src="assets/p-1.png" class="me-2" width="80"
+                        style="border-radius: 5px; cursor: pointer;">
+                    <img src="assets/p2.png" class="me-2" width="80"
+                        style="border-radius: 5px; cursor: pointer;">
+                    <img src="assets/p-3.png" class="me-2" width="80"
+                        style="border-radius: 5px; cursor: pointer;">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h4>Embrace Sideboard</h4>
+                <p class="text-muted">Over Coats</p>
+                <h5>$71.56 <span class="text-decoration-line-through text-muted">$74.56</span></h5>
+                <p>
+                    <span class="badge bg-warning text-dark">4.8</span>
+                    <span class="text-primary">67 Reviews</span><br>
+                    <span class="text-success">93% of buyers have recommended this.</span>
+                </p>
+
+                <p class="mt-4 mb-2">Choose a Color</p>
+                <div class="d-flex mb-3">
+                    <div class="color-option selected" style="background-color: #d4c8b0;"></div>
+                    <div class="color-option" style="background-color: #b6d77a;"></div>
+                    <div class="color-option" style="background-color: #b5bdf9;"></div>
+                    <div class="color-option" style="background-color: #f5d2ec;"></div>
+                    <div class="color-option" style="background-color: #accba3;"></div>
+                </div>
+
+                <p class="mb-2">Choose a Size</p>
+                <div class="d-flex mb-4">
+                    <div class="size-option selected">Small</div>
+                    <div class="size-option">Medium</div>
+                    <div class="size-option">Large</div>
+                    <div class="size-option">Extra Large</div>
+                    <div class="size-option">XXL</div>
+                </div>
+
+                <div class="d-flex align-items-center mb-4">
+                    <button class="btn btn-outline-dark">-</button>
+                    <input type="text" class="form-control text-center mx-2" style="width: 60px;" value="5">
+                    <button class="btn btn-outline-dark">+</button>
+                    <button class="btn btn-add ms-3">ADD TO CART</button>
+                </div>
+
+                <div class="border p-3">
+                    <p class="mb-1"><strong>Free Delivery</strong></p>
+                    <small>Enter your Postal code for Delivery Availability</small>
+                    <hr>
+                    <p class="mb-1"><strong>Return Delivery</strong></p>
+                    <small>Free 30 days Delivery Return. <a href="#">Details</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <ul class="nav nav-tabs border-0 mb-4" id="productTab">
+              <li class="nav-item">
+                <button class="nav-link active" data-target="#description">Description</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-target="#reviews">Reviews</button>
+              </li>
+            </ul>
+          
+            <div id="description" class="tab-content active">
+              <h5 class="fw-semibold mb-3">Product Description</h5>
+              <p>When it's colder than the far side of the moon and spitting rain too, you've still got to look good. From water-repellent leather to a rugged outsole, the Lunar Force 1 adapts AF-1 style, so you can keep your flame burning when the weather hits...</p>
+          
+              <h5 class="fw-semibold mt-4">Benefits</h5>
+              <ul class="list-unstyled">
+                <li>✅ Durable leather is easily cleanable so you can keep your look fresh.</li>
+                <li>✅ Water-repellent finish and internal membrane help keep your feet dry.</li>
+                <li>✅ Toe piece with star pattern adds durability.</li>
+                <li>✅ Synthetic insulation helps keep you warm.</li>
+                <li>✅ Originally designed for performance hoops, the Air unit delivers lightweight cushioning.</li>
+                <li>✅ Plush tongue wraps over the ankle to help keep out the moisture and cold.</li>
+                <li>✅ Rubber outsole with aggressive traction pattern adds durable grip.</li>
+                <li>✅ Durable leather is easily cleanable so you can keep your look fresh.</li>
+              </ul>
+          
+              <h5 class="fw-semibold mt-4">Product Details</h5>
+              <ul class="list-unstyled">
+                <li>✅ Not intended for use as Personal Protective Equipment (PPE)</li>
+                <li>✅ Water-repellent finish and internal membrane help keep your feet dry.</li>
+              </ul>
+          
+              <h5 class="fw-semibold mt-4">More Details</h5>
+              <ul class="list-unstyled">
+                <li>✅ Lunarlon midsole delivers ultra-plush responsiveness</li>
+                <li>✅ Encapsulated Air-Sole heel unit for lightweight cushioning</li>
+                <li>✅ Colour Shown: Ale Brown/Black/Goldtone/Ale Brown</li>
+                <li>✅ Style: 805899-202</li>
+              </ul>
+            </div>
+          
+            <div id="reviews" class="tab-content" style="display:none;">
+              <p class="text-muted">No reviews yet. Be the first to review this product!</p>
+            </div>
+          </div>
+          
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -605,6 +605,18 @@ nav .navbar-brand {
   max-width: 381px;
 }
 
+footer {
+  padding: 100px 0;
+  background-color: #000;
+}
+footer .footer-wrapper {
+  background-image: url(../assets/footer-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: auto;
+}
+
 .trend {
   padding: 100px 0;
 }
@@ -676,4 +688,72 @@ nav .navbar-brand {
   line-height: 120%;
   letter-spacing: -1px;
   color: #2E2A2A;
+}
+
+.product-image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.color-option {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.color-option.selected {
+  border-color: #333;
+}
+
+.size-option {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.size-option.selected {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.btn-add {
+  background-color: #1a1a1a;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+  background-color: #333;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: #000;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: #000;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 8px;
+  line-height: 1.6;
 }/*# sourceMappingURL=style.css.map */

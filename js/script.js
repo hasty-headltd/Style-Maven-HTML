@@ -109,10 +109,33 @@ function updateQuantity(amount) {
 
 const swiper = new Swiper('.shopSwiper', {
   slidesPerView: 3,
-  spaceBetween: 20, 
+  spaceBetween: 20,
   scrollbar: {
     el: '.swiper-scrollbar',
     hide: false,
   },
 });
+
+
+
+
+const tabButtons = document.querySelectorAll('#productTab .nav-link');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active from all
+    tabButtons.forEach(b => b.classList.remove('active'));
+    tabContents.forEach(tc => tc.classList.remove('active'));
+
+    // Add to current
+    btn.classList.add('active');
+    document.querySelector(btn.dataset.target).classList.add('active');
+  });
+});
+
+
+
+
+
 

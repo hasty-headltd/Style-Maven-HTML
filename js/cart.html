@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Maven</title>
+    <!-- css Link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap cdn  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Structure Start  -->
+<section>
+    <div class="container mt-5">
+        <h2>Your Cart</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5>Velvet Twilight Maxi</h5>
+                                <p>Size: Large</p>
+                                <p>Color: White</p>
+                            </div>
+                            <div>
+                                <span class="price">$145</span>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="changeQuantity('velvet1', -1)">-</button>
+                                    <span id="velvet1" class="mx-2">5</span>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="changeQuantity('velvet1', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar card structure for other items -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5>Velvet Twilight Maxi</h5>
+                                <p>Size: Large</p>
+                                <p>Color: White</p>
+                            </div>
+                            <div>
+                                <span class="price">$145</span>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="changeQuantity('velvet2', -1)">-</button>
+                                    <span id="velvet2" class="mx-2">5</span>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="changeQuantity('velvet2', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5>Velvet Twilight Maxi</h5>
+                                <p>Size: Large</p>
+                                <p>Color: White</p>
+                            </div>
+                            <div>
+                                <span class="price">$145</span>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="changeQuantity('velvet3', -1)">-</button>
+                                    <span id="velvet3" class="mx-2">5</span>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="changeQuantity('velvet3', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Order Summary</h5>
+                        <p>Subtotal: <span id="subtotal">$565</span></p>
+                        <p>Discount (-20%): <span class="text-danger">- $113</span></p>
+                        <p>Delivery Fee: $15</p>
+                        <hr>
+                        <h5>Total: <span id="total">$467</span></h5>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Add promo code">
+                            <button class="btn btn-primary">Apply</button>
+                        </div>
+                        <button class="btn btn-success w-100">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
