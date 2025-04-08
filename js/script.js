@@ -69,7 +69,7 @@ let logoSwiper = new Swiper(".logoSwiper", {
   speed: 3000,
   grabCursor: true,
   breakpoints: {
-    320: { slidesPerView:3 },
+    320: { slidesPerView: 3 },
     576: { slidesPerView: 3 },
     768: { slidesPerView: 4 },
     992: { slidesPerView: 5 },
@@ -105,3 +105,14 @@ function updateQuantity(amount) {
   if (current < 1) current = 1;
   qtyInput.value = current;
 }
+
+
+const swiper = new Swiper('.shopSwiper', {
+  slidesPerView: 3,
+  spaceBetween: 20, 
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: false,
+  },
+});
+

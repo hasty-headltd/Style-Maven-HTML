@@ -115,12 +115,24 @@ img {
   font-size: 16px;
 }
 
+.fs-18 {
+  font-size: 18px;
+}
+
 .fs-22 {
   font-size: 22px;
 }
 
 .fs-24 {
   font-size: 24px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-38 {
+  font-size: 32px;
 }
 
 .fs-40 {
@@ -230,6 +242,37 @@ h2 {
 }
 
 /* helper , base classes  - END*/
+nav {
+  background: #222021;
+  --bs-navbar-padding-y: 0 !important;
+}
+nav .navbar-brand {
+  font-size: 30px !important;
+  color: #FFF;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  flex: 0 0 10%;
+}
+
+.navbar-nav {
+  flex: 0 0 80%;
+  padding: 22px 0;
+  justify-content: center;
+  gap: 70px;
+}
+
+.d-lg-flex {
+  flex: 0 0 10%;
+  justify-content: flex-end;
+}
+
 .banner {
   padding: 528px 0 90px 0;
   background-image: url(../assets/hero-bg.png);
@@ -560,4 +603,77 @@ h2 {
   font-size: 0.75rem;
   letter-spacing: 2px;
   max-width: 381px;
+}
+
+.trend {
+  padding: 100px 0;
+}
+.trend .trend-wrapper .trend-left-top h4 {
+  line-height: 103.125%;
+  max-width: 325px;
+}
+.trend .trend-wrapper .trend-bottom .trend-bottom-details {
+  line-height: 170%;
+  letter-spacing: -0.16px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.discover {
+  padding: 0 0px 100px 0;
+}
+
+.craft .craft-left-block {
+  padding: 40px;
+  background: #F8F3EF;
+}
+.craft .craft-left-block .craft-left-block-head {
+  padding-bottom: 185px;
+}
+.craft .craft-right-block .top-block-img {
+  padding-bottom: 160px;
+}
+.craft .craft-right-block .designers {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.craft .craft-right-block .designers h4 {
+  line-height: 120%;
+}
+.craft .craft-right-block .designers p {
+  line-height: 150%;
+}
+
+.team {
+  padding: 100px 0;
+}
+
+.ring {
+  padding: 100px 0;
+}
+.ring .ring-wrapper .ring-right-block {
+  padding: 90px;
+  background-color: #FFF;
+}
+.ring .ring-wrapper .ring-left-block,
+.ring .ring-wrapper .ring-right-block {
+  height: 100%;
+}
+
+.shop {
+  padding: 100px 0;
+}
+.shop .shop-wrapper .shopSwiper .swiper-wrapper .swiper-slide .shop-subheading {
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+.shop .shop-wrapper .shopSwiper .swiper-wrapper .swiper-slide .shop-heading {
+  line-height: normal;
+  letter-spacing: -1px;
+  color: #2E2A2A;
+}
+.shop .shop-wrapper .shopSwiper .swiper-wrapper .swiper-slide .shop-item-price {
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #2E2A2A;
 }/*# sourceMappingURL=style.css.map */

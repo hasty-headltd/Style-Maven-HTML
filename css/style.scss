@@ -126,12 +126,24 @@ img {
     font-size: 16px;
 }
 
+.fs-18 {
+    font-size: 18px;
+}
+
 .fs-22 {
     font-size: 22px;
 }
 
 .fs-24 {
     font-size: 24px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-38 {
+    font-size: 32px;
 }
 
 .fs-40 {
@@ -247,6 +259,51 @@ h2 {
 
 
 /* helper , base classes  - END*/
+
+// nav start 
+// nav {
+//     background: #222021;
+//     --bs-navbar-padding-y: 0 !important;
+
+//     .navbar-nav {
+//         padding: 22px 0 22px 0;
+//         .nav-item {
+//             a {}
+//         }
+//     }
+    
+// }
+
+nav {
+    background: #222021;
+    --bs-navbar-padding-y: 0 !important;
+    .navbar-brand{
+        font-size: 30px !important;
+        color: #FFF;
+    }
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    flex: 0 0 10%;
+}
+
+.navbar-nav {
+    flex: 0 0 80%;
+    padding: 22px 0;
+    justify-content: center;
+    gap: 70px;
+}
+
+.d-lg-flex {
+    flex: 0 0 10%;
+    justify-content: flex-end;
+}
 
 
 // banner start 
@@ -662,4 +719,135 @@ h2 {
             max-width: 381px;
         }
     }
+}
+
+
+// about Page css start 
+
+
+// trend section start 
+.trend {
+    padding: 100px 0;
+
+    .trend-wrapper {
+        .trend-left-top {
+            h4 {
+                line-height: 103.125%;
+                max-width: 325px;
+            }
+        }
+
+        .trend-bottom {
+            .trend-bottom-details {
+                line-height: 170%;
+                letter-spacing: -0.16px;
+                padding-bottom: 40px;
+                padding-top: 30px;
+            }
+
+        }
+    }
+}
+
+// trend section end
+
+// discover section start 
+.discover {
+    padding: 0 0px 100px 0;
+}
+
+// discover section end
+
+// craft section start 
+.craft {
+    .craft-left-block {
+        padding: 40px;
+        background: #F8F3EF;
+
+        .craft-left-block-head {
+            padding-bottom: 185px;
+        }
+    }
+
+    .craft-right-block {
+        .top-block-img {
+            padding-bottom: 160px;
+        }
+
+        .designers {
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+            h4 {
+                line-height: 120%;
+            }
+
+            p {
+                line-height: 150%;
+            }
+        }
+    }
+}
+
+// craft section end
+
+// team start 
+.team {
+    padding: 100px 0;
+}
+
+// team end 
+
+
+//  ring start 
+.ring {
+    padding: 100px 0;
+
+    .ring-wrapper {
+        .ring-right-block {
+            padding: 90px;
+            background-color: #FFF;
+        }
+
+        .ring-left-block,
+        .ring-right-block {
+            height: 100%;
+        }
+    }
+}
+
+//  ring end
+
+// shop start 
+.shop {
+    padding: 100px 0;
+
+    .shop-wrapper {
+        .shopSwiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .shop-subheading {
+                        line-height: 120%;
+                        letter-spacing: -1px;
+                    }
+
+                    .shop-heading {
+                        line-height: normal;
+                        letter-spacing: -1px;
+                        color: #2E2A2A;
+                    }
+
+                    .shop-item-price {
+                        line-height: 120%;
+                        letter-spacing: -1px;
+                        color: #2E2A2A;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
 }
