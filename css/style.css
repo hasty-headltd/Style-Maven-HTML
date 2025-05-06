@@ -560,7 +560,29 @@ nav .navbar-brand {
 }
 
 .newsletter {
-  padding: 150px 0;
+  padding: 230px 0 290px 0;
+}
+.newsletter .newsletter-wrapper {
+  position: relative;
+}
+.newsletter .newsletter-wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url(../assets/manimage.png);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 630px;
+  top: -209px;
+}
+.newsletter .newsletter-wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url(../assets/manimagew2.png);
+  width: 300px;
+  height: 630px;
+  top: -150px;
+  background-repeat: no-repeat;
+  right: 0;
 }
 .newsletter .newsletter-wrapper .newsletter-heading {
   letter-spacing: -0.92px;
@@ -572,25 +594,6 @@ nav .navbar-brand {
 .newsletter .newsletter-wrapper .subscribe-box {
   position: relative;
   text-align: center;
-}
-.newsletter .newsletter-wrapper .subscribe-box::before {
-  position: absolute;
-  content: "";
-  background-image: url(../assets/manimage.png);
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 630px;
-  top: -300px;
-}
-.newsletter .newsletter-wrapper .subscribe-box::after {
-  position: absolute;
-  content: "";
-  background-image: url(../assets/manimagew2.png);
-  width: 300px;
-  height: 630px;
-  top: -300px;
-  background-repeat: no-repeat;
-  right: 0;
 }
 .newsletter .newsletter-wrapper .form-control {
   border-radius: 0;
@@ -758,4 +761,23 @@ footer .footer-wrapper {
 ul.list-unstyled li {
   margin-bottom: 8px;
   line-height: 1.6;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: inline-block;
+}
+
+.selected {
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #888;
+}
+
+.homeproductbtn {
+  border-radius: 0 !important;
 }/*# sourceMappingURL=style.css.map */

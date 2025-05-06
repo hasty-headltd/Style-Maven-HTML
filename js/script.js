@@ -134,6 +134,21 @@ tabButtons.forEach(btn => {
   });
 });
 
+// clickable color 
+const colorOptions = document.querySelectorAll('.color-option');
+
+colorOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    colorOptions.forEach(o => o.classList.remove('selected'));
+    option.classList.add('selected');
+    // Optional: get selected color
+    const selectedColor = option.getAttribute('data-color');
+    console.log('Selected color:', selectedColor);
+  });
+});
+// clickable color 
+
+
 
 
 

@@ -666,11 +666,35 @@ nav {
 
 // newsletter start 
 .newsletter {
-    padding: 150px 0;
+    padding: 230px 0 290px 0;
 
 
 
     .newsletter-wrapper {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../assets/manimage.png);
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 630px;
+            top: -209px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(../assets/manimagew2.png);
+            width: 300px;
+            height: 630px;
+            top: -150px;
+            background-repeat: no-repeat;
+            right: 0;
+
+        }
+
         .newsletter-heading {
             letter-spacing: -0.92px;
             padding-bottom: 26px;
@@ -684,27 +708,26 @@ nav {
             position: relative;
             text-align: center;
 
-            &::before {
-                position: absolute;
-                content: "";
-                background-image: url(../assets/manimage.png);
-                background-repeat: no-repeat;
-                width: 300px;
-                height: 630px;
-                top: -300px;
-            }
+            // &::before {
+            //     position: absolute;
+            //     content: "";
+            //     background-image: url(../assets/manimage.png);
+            //     background-repeat: no-repeat;
+            //     width: 300px;
+            //     height: 630px;
+            // }
 
-            &::after {
-                position: absolute;
-                content: "";
-                background-image: url(../assets/manimagew2.png);
-                width: 300px;
-                height: 630px;
-                top: -300px;
-                background-repeat: no-repeat;
-                right: 0;
+            // &::after {
+            //     position: absolute;
+            //     content: "";
+            //     background-image: url(../assets/manimagew2.png);
+            //     width: 300px;
+            //     height: 630px;
+            //     top: -300px;
+            //     background-repeat: no-repeat;
+            //     right: 0;
 
-            }
+            // }
         }
 
         .form-control {
@@ -950,4 +973,30 @@ footer {
 ul.list-unstyled li {
     margin-bottom: 8px;
     line-height: 1.6;
+}
+
+
+// last update 
+// clickable color 
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+
+.selected {
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #888;
+
+}
+
+// clickable color 
+
+// home product btn 
+.homeproductbtn {
+    border-radius: 0 !important;
 }
