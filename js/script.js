@@ -205,6 +205,15 @@ function changeImage(element) {
   mainImage.src = element.src;
 }
 
+// cart page 
+function changeQty(btn, delta) {
+  const span = btn.parentElement.querySelector('span');
+  let value = parseInt(span.innerText);
+  value += delta;
+  if (value < 1) value = 1;
+  span.innerText = value;
+}
+
 
 
 

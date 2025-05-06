@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Maven</title>
+    <!-- css Link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap cdn  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Structure Start  -->
+
+    <!-- header section start  -->
+    <header>
+        <nav class="navbar navbar-expand-lg" aria-label="Thirteenth navbar example">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand col-lg-2 me-0 text-start font-Secondary-400 text-center d-md-flex d-lg-none d-sm-flex"
+                    href="#">Style
+                    Maven</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="24" fill="black" />
+                        <rect x="14.5723" y="19.7142" width="18.8571" height="1.71429" fill="#FAFAFC" />
+                        <rect x="14.5723" y="26.5714" width="15.0771" height="1.71429" fill="#FAFAFC" />
+                    </svg>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex w-100" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-2 me-0 text-start font-Secondary-400 text-center d-lg-flex justify-content-center d-md-none d-sm-none"
+                        href="#">Style
+                        Maven</a>
+                    <ul class="navbar-nav col-lg-9 justify-content-lg-center bg-white">
+                        <li class="nav-item">
+                            <a class="nav-link active font-primary-400" aria-current="page" href="index.html">Home +</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About +</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cart.html">Cart</a>
+                        </li>
+                     
+                    </ul>
+                    <div class="d-lg-flex col-lg-1 justify-content-lg-center text-uppercase">
+                        <a class="font-primary-400 fs-14 text-white text-decoration-none" href="">cart (0)</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header section end  -->
+    <section>
+        <div class="container py-5">
+            <h5 class="font-Secondary-400 fs-28 text-black pb-2">Your Cart</h5>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="cart-box">
+                        <!-- Cart Items (same as before) -->
+                        <div class="cart-item d-flex align-items-center">
+                            <img class="" src="assets/cartimg1.png" alt="">
+                            <div class="cart-info">
+                                <h6 class="font-Secondary-400 fs-20 text-black">Velvet Twilight Maxi</h6>
+                                <small>Size: Large</small>
+                                <small>Color: White</small>
+                                <p class="cart-price mt-2">$145</p>
+                            </div>
+                            <div class="qty-box">
+                                <button onclick="changeQty(this, -1)">-</button>
+                                <span>5</span>
+                                <button onclick="changeQty(this, 1)">+</button>
+                            </div>
+                            <button class="close-btn ms-3">&times;</button>
+                        </div>
+
+                        <div class="cart-item d-flex align-items-center">
+                            <img src="assets/cartimg2.png" alt="">
+                            <div class="cart-info">
+                                <h6>Velvet Twilight Maxi</h6>
+                                <small>Size: Large</small>
+                                <small>Color: White</small>
+                                <p class="cart-price mt-2">$145</p>
+                            </div>
+                            <div class="qty-box">
+                                <button onclick="changeQty(this, -1)">-</button>
+                                <span>5</span>
+                                <button onclick="changeQty(this, 1)">+</button>
+                            </div>
+                            <button class="close-btn ms-3">&times;</button>
+                        </div>
+
+                        <div class="cart-item d-flex align-items-center">
+                            <img src="assets/cartimg3.png" alt="">
+                            <div class="cart-info">
+                                <h6>Velvet Twilight Maxi</h6>
+                                <small>Size: Large</small>
+                                <small>Color: White</small>
+                                <p class="cart-price mt-2">$145</p>
+                            </div>
+                            <div class="qty-box">
+                                <button onclick="changeQty(this, -1)">-</button>
+                                <span>5</span>
+                                <button onclick="changeQty(this, 1)">+</button>
+                            </div>
+                            <button class="close-btn ms-3">&times;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="summary-box">
+                        <h5>Order Summary</h5>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>$565</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Discount (-20%)</span>
+                            <span class="text-danger">-$113</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery Fee</span>
+                            <span>$15</span>
+                        </div>
+                        <div class="summary-row summary-total">
+                            <span>Total</span>
+                            <span>$467</span>
+                        </div>
+                        <div class="input-group mt-3">
+                            <input type="text" class="form-control promo-input" placeholder="Add promo code">
+                            <button class="btn btn-dark apply-btn">APPLY</button>
+                        </div>
+                        <button class="btn checkout-btn">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <h4 class="font-Secondary-400 fs-32 text-white text-center pb-5 text-uppercase">Style Maven</h4>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="footer-link-wrap">
+                            <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Company</h6>
+                            <ul class="p-0 d-flex flex-column gap-3 ">
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="about.html">About Us</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="about.html">Our Team</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="#">Our Blog</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="product.html">Gift Cards</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="about.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-link-wrap">
+                            <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Services</h6>
+                            <ul class="p-0 d-flex flex-column gap-3 ">
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="about.html">FAQ</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="shop.html">Shipping</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="about.html">Tracking</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="about.html">Returns</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="about.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-link-wrap">
+                            <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Follow Us</h6>
+                            <ul class="p-0 d-flex flex-column gap-3 ">
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="https://www.facebook.com/">Facebook</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="https://www.instagram.com/">Instagram</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="https://www.youtube.com/">YouTube</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="https://www.pinterest.com/">Pinterest</a></li>
+                                <li class="list-unstyled"><a
+                                        class="font-Secondary-400 text-white text-decoration-none list-unstyled"
+                                        href="https://x.com/">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        .
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
