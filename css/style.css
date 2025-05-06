@@ -492,6 +492,8 @@ nav .navbar-brand {
   cursor: pointer;
   margin-bottom: 15px;
   border: 2px solid transparent;
+  max-height: 119.383px;
+  min-width: 90px;
 }
 .order-details .order-details-wrapper .thumbnail.active {
   border-color: #000;
