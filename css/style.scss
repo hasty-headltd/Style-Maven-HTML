@@ -134,6 +134,10 @@ img {
     font-size: 22px;
 }
 
+.fs-20 {
+    font-size: 20px;
+}
+
 .fs-24 {
     font-size: 24px;
 }
@@ -358,7 +362,7 @@ nav {
 
 // brand start 
 .brand {
-    padding: 60px 0 60px 0;
+    padding: 60px 0 0px 0;
 
     @media (max-width:375px) {
         padding: 20px 0;
@@ -370,7 +374,7 @@ nav {
 
 // arrivals start 
 .arrivals {
-    padding: 100px 0 100px 0;
+    padding: 80px 0 50px 0;
 
     @media (max-width:375px) {
         padding: 20px 0;
@@ -637,7 +641,7 @@ nav {
 
 // instagram start 
 .instagram {
-    padding: 100px 0;
+    padding: 50px 0;
 
     @media (max-width:375px) {
         padding: 20px 0;
@@ -689,7 +693,7 @@ nav {
             background-image: url(../assets/manimagew2.png);
             width: 300px;
             height: 630px;
-            top: -150px;
+            top: -111px;
             background-repeat: no-repeat;
             right: 0;
 
@@ -800,6 +804,10 @@ footer {
 
 // craft section start 
 .craft {
+    .col-lg-4 {
+        padding: 0 !important;
+    }
+
     .craft-left-block {
         padding: 40px;
         background: #F8F3EF;
@@ -811,7 +819,7 @@ footer {
 
     .craft-right-block {
         .top-block-img {
-            padding-bottom: 160px;
+            padding-bottom: 113px;
         }
 
         .designers {
@@ -860,7 +868,7 @@ footer {
 
 // shop start 
 .shop {
-    padding: 100px 0;
+    padding: 80px 0;
 
     .shop-wrapper {
         .shopSwiper {
@@ -999,4 +1007,293 @@ ul.list-unstyled li {
 // home product btn 
 .homeproductbtn {
     border-radius: 0 !important;
+}
+
+// product-sizes 
+
+// product lovers 
+.action-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-btn {
+    border: none;
+    background-color: #FFF0F0;
+    border-radius: 12px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.icon-btn:hover {
+    background-color: #e2e6ea;
+}
+
+.like-box {
+    background-color: #ffeef0;
+    color: #d6336c;
+    font-weight: 500;
+}
+
+.like-box:hover {
+    background-color: #fddde2;
+}
+
+.like-icon {
+    margin-right: 8px;
+}
+
+// product lovers 
+
+// product subheading 
+.product-subheading {
+    border-bottom: 1px solid #E4E4E4;
+}
+
+// product price 
+.price {
+    font-size: 32px;
+    font-weight: 600;
+    color: #3A4980;
+}
+
+.rating-box,
+.review-box {
+    border-radius: 12px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.rating-box {
+    background-color: #FBF3EA;
+    color: #D49148;
+}
+
+.review-box {
+    background-color: #EDF0F8;
+    color: #3A4980;
+}
+
+.rating-box i,
+.review-box i {
+    margin-right: 6px;
+}
+
+
+//   old price 
+.old-price {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.old-price-detaiuls {
+    color: #B9BBBF;
+}
+
+.old-price-info-color {
+    color: #3E9242;
+    font-weight: 600;
+
+
+}
+
+// product color picker 
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: border 0.3s ease;
+}
+
+.color-circle .checkmark {
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.color-circle.selected {
+    border: 3px solid white;
+}
+
+.color-circle.selected .checkmark {
+    display: block;
+}
+
+//   product radio 
+.size-option {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 6px 16px;
+    margin-right: 10px;
+    background-color: #F3F3F3;
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.size-option input[type="radio"] {
+    display: none;
+}
+
+.size-option.active {
+    background-color: #EDF0F8;
+    border: 2px solid #3A4980;
+    color: #3A4980;
+}
+
+.size-option .circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+}
+
+.size-option.active .circle {
+    border-color: #3A4980;
+    background-color: #3A4980;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+}
+
+.size-option.active .circle::after {
+    display: block;
+}
+
+// product plus minus 
+.quantity-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 4px 10px;
+    background-color: #f4f1ea;
+    min-width: 120px;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quantity-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    width: 30px;
+}
+
+.cart-btn {
+    background-color: #2C2C2C;
+    color: white;
+    padding: 10px 24px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.cart-btn i {
+    font-size: 16px;
+}
+
+//   free percel 
+.delivery-box {
+    background-color: #f4f1ea;
+    border: 1px solid #dedbd2;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 700px;
+}
+
+.delivery-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.delivery-icon {
+    color: #d35c5c;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.delivery-title {
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+}
+
+.delivery-link {
+    font-size: 14px;
+    color: #5a524e;
+    text-decoration: underline;
+    margin-top: 2px;
+}
+
+hr {
+    margin: 10px 0;
+    color: #d2cdc6;
+}
+
+// image gallery 
+.main-image {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.thumb-image {
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.thumb-image:hover {
+    transform: scale(1.02);
+}
+
+.gallery-container {
+
+    margin: auto;
+}
+
+.thumb-wrapper {
+    padding: 6px;
 }

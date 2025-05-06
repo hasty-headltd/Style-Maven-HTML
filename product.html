@@ -11,233 +11,376 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
     <!-- Structure Start  -->
-      <!-- header section start  -->
+    <!-- header section start  -->
     <header>
-      <nav class="navbar navbar-expand-lg" aria-label="Thirteenth navbar example">
-          <div class="container-fluid d-flex justify-content-between">
-              <a class="navbar-brand col-lg-2 me-0 text-start font-Secondary-400 text-center d-md-flex d-lg-none d-sm-flex"
-                  href="#">Style
-                  Maven</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="48" height="48" rx="24" fill="black" />
-                      <rect x="14.5723" y="19.7142" width="18.8571" height="1.71429" fill="#FAFAFC" />
-                      <rect x="14.5723" y="26.5714" width="15.0771" height="1.71429" fill="#FAFAFC" />
-                  </svg>
-              </button>
+        <nav class="navbar navbar-expand-lg" aria-label="Thirteenth navbar example">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand col-lg-2 me-0 text-start font-Secondary-400 text-center d-md-flex d-lg-none d-sm-flex"
+                    href="#">Style
+                    Maven</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="24" fill="black" />
+                        <rect x="14.5723" y="19.7142" width="18.8571" height="1.71429" fill="#FAFAFC" />
+                        <rect x="14.5723" y="26.5714" width="15.0771" height="1.71429" fill="#FAFAFC" />
+                    </svg>
+                </button>
 
-              <div class="collapse navbar-collapse d-lg-flex w-100" id="navbarsExample11">
-                  <a class="navbar-brand col-lg-2 me-0 text-start font-Secondary-400 text-center d-lg-flex justify-content-center d-md-none d-sm-none"
-                      href="#">Style
-                      Maven</a>
-                  <ul class="navbar-nav col-lg-9 justify-content-lg-center bg-white">
-                      <li class="nav-item">
-                          <a class="nav-link active font-primary-400" aria-current="page" href="index.html">Home +</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="about.html">About +</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="product.html">Product</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Cart</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">All Pages +</a>
-                      </li>
-                  </ul>
-                  <div class="d-lg-flex col-lg-1 justify-content-lg-center text-uppercase">
-                      <a class="font-primary-400 fs-14 text-white text-decoration-none" href="">cart (0)</a>
-                  </div>
-              </div>
-          </div>
-      </nav>
-  </header>
-  <!-- header section end  -->
+                <div class="collapse navbar-collapse d-lg-flex w-100" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-2 me-0 text-start font-Secondary-400 text-center d-lg-flex justify-content-center d-md-none d-sm-none"
+                        href="#">Style
+                        Maven</a>
+                    <ul class="navbar-nav col-lg-9 justify-content-lg-center bg-white">
+                        <li class="nav-item">
+                            <a class="nav-link active font-primary-400" aria-current="page" href="index.html">Home +</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About +</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">All Pages +</a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-1 justify-content-lg-center text-uppercase">
+                        <a class="font-primary-400 fs-14 text-white text-decoration-none" href="">cart (0)</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header section end  -->
     <div class="container py-5">
         <div class="row">
             <div class="col-md-6">
-                <img src="assets/product-image-main.png" class="product-image mb-3" alt="Main Product Image">
-                <div class="d-flex">
-                    <img src="assets/p-1.png" class="me-2" width="80"
-                        style="border-radius: 5px; cursor: pointer;">
-                    <img src="assets/p2.png" class="me-2" width="80"
-                        style="border-radius: 5px; cursor: pointer;">
-                    <img src="assets/p-3.png" class="me-2" width="80"
-                        style="border-radius: 5px; cursor: pointer;">
+                <div class="gallery-container">
+                    <!-- Main Image -->
+                    <img id="mainImage" src="assets/gimagemain.png" class="main-image mb-3" alt="Main Display">
+                
+                    <!-- Thumbnails -->
+                    <div class="row g-2">
+                      <div class="col-6 thumb-wrapper">
+                        <img src="assets/gimage1.png" class="thumb-image" onclick="changeImage(this)">
+                      </div>
+                      <div class="col-6 thumb-wrapper">
+                        <img src="assets/gimage2.png" class="thumb-image" onclick="changeImage(this)">
+                      </div>
+                      <div class="col-6 thumb-wrapper">
+                        <img src="assets/gimage3.png" class="thumb-image" onclick="changeImage(this)">
+                      </div>
+                      <div class="col-6 thumb-wrapper">
+                        <img src="assets/gimage4.png" class="thumb-image" onclick="changeImage(this)">
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <img src="assets/product-image-main.png" class="product-image mb-3" alt="Main Product Image">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                    </div>
                 </div>
+                <div class="d-flex">
+                    <img src="assets/p-1.png" class="me-2" width="80" style="border-radius: 5px; cursor: pointer;">
+                    <img src="assets/p2.png" class="me-2" width="80" style="border-radius: 5px; cursor: pointer;">
+                    <img src="assets/p-3.png" class="me-2" width="80" style="border-radius: 5px; cursor: pointer;">
+                </div> -->
             </div>
 
             <div class="col-md-6">
-                <h4>Embrace Sideboard</h4>
-                <p class="text-muted">Over Coats</p>
-                <h5>$71.56 <span class="text-decoration-line-through text-muted">$74.56</span></h5>
-                <p>
-                    <span class="badge bg-warning text-dark">4.8</span>
-                    <span class="text-primary">67 Reviews</span><br>
-                    <span class="text-success">93% of buyers have recommended this.</span>
-                </p>
+                <div class="d-flex align-items-center gap-5">
+                    <h4>Embrace Sideboard</h4>
+                    <div class="action-box">
+                        <button id="likeBtn" class="icon-btn like-box d-flex justify-content-center gap-2">
+                            <img src="assets/love.png" alt="">
+                            <span id="likeCount">109</span>
+                        </button>
 
-                <p class="mt-4 mb-2">Choose a Color</p>
-                <div class="d-flex mb-3">
-                    <div class="color-option selected" style="background-color: #d4c8b0;"></div>
-                    <div class="color-option" style="background-color: #b6d77a;"></div>
-                    <div class="color-option" style="background-color: #b5bdf9;"></div>
-                    <div class="color-option" style="background-color: #f5d2ec;"></div>
-                    <div class="color-option" style="background-color: #accba3;"></div>
+                        <button class="icon-btn" style="background-color: #edf0fa;">
+                            <img src="assets/hafta.png" alt="">
+                        </button>
+
+                        <button class="icon-btn" style="background-color: #edf0fa;">
+                            <img src="assets/shae.png" alt="">
+                        </button>
+                    </div>
+
+                </div>
+                <p class="product-subheading text-muted pb-5">Over Coats</p>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="price">$71.56</div>
+
+                    <div class="rating-box d-flex align-items-center gap-2">
+                        <img src="assets/starts.png" alt="">
+                        <h6 class="m-0">4.8</h6>
+
+                    </div>
+
+                    <div class="review-box d-flex align-items-center gap-2">
+                        <img src="assets/messages.png" alt="">
+                        <h6 class="m-0">67 Reviews</h6>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-5 pt-3">
+                    <h6 class="old-price fs-22 font-Secondary-400 text-decoration-line-through ">$71.56</h6>
+                    <h6 class="old-price-detaiuls font-primary-400 fs-14 "><span class="old-price-info-color">93%</span>
+                        of buyers have recommended this.</h6>
+                </div>
+                <p class="mt-4 mb-2 fs-14 font-Secondary-400 text-black">Choose a Color</p>
+                <div id="color-picker" class="d-inline-flex flex-wrap justify-content-center">
+                    <div class="color-circle" style="background-color: #efdecd;" data-color="#efdecd">
+                        <span class="checkmark">✔</span>
+                    </div>
+                    <div class="color-circle" style="background-color: #c4d76f;" data-color="#c4d76f">
+                        <span class="checkmark">✔</span>
+                    </div>
+                    <div class="color-circle" style="background-color: #b9c3f5;" data-color="#b9c3f5">
+                        <span class="checkmark">✔</span>
+                    </div>
+                    <div class="color-circle" style="background-color: #ffcfff;" data-color="#ffcfff">
+                        <span class="checkmark">✔</span>
+                    </div>
+                    <div class="color-circle" style="background: linear-gradient(to bottom, #e9b1a7 50%, #b7c796 50%);"
+                        data-color="split">
+                        <span class="checkmark">✔</span>
+                    </div>
+                </div>
+                <div class="mb-2 fw-semibold">Choose a Size</div>
+                <div class="d-flex flex-wrap">
+
+                    <label class="size-option active">
+                        <input type="radio" name="size" value="Small" checked>
+                        <span class="circle"></span> Small
+                    </label>
+
+                    <label class="size-option">
+                        <input type="radio" name="size" value="Medium">
+                        <span class="circle"></span> Medium
+                    </label>
+
+                    <label class="size-option">
+                        <input type="radio" name="size" value="Large">
+                        <span class="circle"></span> Large
+                    </label>
+
+                    <label class="size-option">
+                        <input type="radio" name="size" value="Extra Large">
+                        <span class="circle"></span> Extra Large
+                    </label>
+
+                    <label class="size-option">
+                        <input type="radio" name="size" value="XXL">
+                        <span class="circle"></span> XXL
+                    </label>
+
                 </div>
 
-                <p class="mb-2">Choose a Size</p>
-                <div class="d-flex mb-4">
-                    <div class="size-option selected">Small</div>
-                    <div class="size-option">Medium</div>
-                    <div class="size-option">Large</div>
-                    <div class="size-option">Extra Large</div>
-                    <div class="size-option">XXL</div>
+                <div class="d-flex align-items-center mt-5">
+                    <div class="quantity-box">
+                        <button class="quantity-btn" onclick="decreaseQty()">-</button>
+                        <span id="quantity">5</span>
+                        <button class="quantity-btn" onclick="increaseQty()">+</button>
+                    </div>
+
+                    <button class="cart-btn">
+                        <i class="bi bi-bag"></i> ADD TO CART
+                    </button>
                 </div>
 
-                <div class="d-flex align-items-center mb-4">
-                    <button class="btn btn-outline-dark">-</button>
-                    <input type="text" class="form-control text-center mx-2" style="width: 60px;" value="5">
-                    <button class="btn btn-outline-dark">+</button>
-                    <button class="btn btn-add ms-3">ADD TO CART</button>
-                </div>
-
-                <div class="border p-3">
-                    <p class="mb-1"><strong>Free Delivery</strong></p>
-                    <small>Enter your Postal code for Delivery Availability</small>
+                <div class="delivery-box mt-5">
+                    <div class="delivery-item">
+                        <i class="bi bi-truck delivery-icon"></i>
+                        <div>
+                            <div class="delivery-title">Free Delivery</div>
+                            <div class="delivery-link">Enter your Postal code for Delivery Availability</div>
+                        </div>
+                    </div>
                     <hr>
-                    <p class="mb-1"><strong>Return Delivery</strong></p>
-                    <small>Free 30 days Delivery Return. <a href="#">Details</a></small>
-                </div>
-            </div>
-        </div>
-        <div class="container my-5">
-            <ul class="nav nav-tabs border-0 mb-4" id="productTab">
-              <li class="nav-item">
-                <button class="nav-link active" data-target="#description">Description</button>
-              </li>
-              <li class="nav-item">
-                <button class="nav-link" data-target="#reviews">Reviews</button>
-              </li>
-            </ul>
-          
-            <div id="description" class="tab-content active">
-              <h5 class="fw-semibold mb-3">Product Description</h5>
-              <p>When it's colder than the far side of the moon and spitting rain too, you've still got to look good. From water-repellent leather to a rugged outsole, the Lunar Force 1 adapts AF-1 style, so you can keep your flame burning when the weather hits...</p>
-          
-              <h5 class="fw-semibold mt-4">Benefits</h5>
-              <ul class="list-unstyled">
-                <li>✅ Durable leather is easily cleanable so you can keep your look fresh.</li>
-                <li>✅ Water-repellent finish and internal membrane help keep your feet dry.</li>
-                <li>✅ Toe piece with star pattern adds durability.</li>
-                <li>✅ Synthetic insulation helps keep you warm.</li>
-                <li>✅ Originally designed for performance hoops, the Air unit delivers lightweight cushioning.</li>
-                <li>✅ Plush tongue wraps over the ankle to help keep out the moisture and cold.</li>
-                <li>✅ Rubber outsole with aggressive traction pattern adds durable grip.</li>
-                <li>✅ Durable leather is easily cleanable so you can keep your look fresh.</li>
-              </ul>
-          
-              <h5 class="fw-semibold mt-4">Product Details</h5>
-              <ul class="list-unstyled">
-                <li>✅ Not intended for use as Personal Protective Equipment (PPE)</li>
-                <li>✅ Water-repellent finish and internal membrane help keep your feet dry.</li>
-              </ul>
-          
-              <h5 class="fw-semibold mt-4">More Details</h5>
-              <ul class="list-unstyled">
-                <li>✅ Lunarlon midsole delivers ultra-plush responsiveness</li>
-                <li>✅ Encapsulated Air-Sole heel unit for lightweight cushioning</li>
-                <li>✅ Colour Shown: Ale Brown/Black/Goldtone/Ale Brown</li>
-                <li>✅ Style: 805899-202</li>
-              </ul>
-            </div>
-          
-            <div id="reviews" class="tab-content" style="display:none;">
-              <p class="text-muted">No reviews yet. Be the first to review this product!</p>
-            </div>
-          </div>
-          
-    </div>
-
-       <!-- footer section start  -->
-       <footer>
-        <div class="container">
-            <div class="footer-wrapper">
-                <h4 class="font-Secondary-400 fs-32 text-white text-center pb-5">Style Maven</h4>
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="footer-link-wrap">
-                            <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Company</h6>
-                            <ul class="p-0 d-flex flex-column gap-3 ">
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">About Us
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Our Team
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Our Blog
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Gift Cards
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Contact
-                                </li>
-
-
-                            </ul>
+                    <div class="delivery-item">
+                        <i class="bi bi-bag delivery-icon"></i>
+                        <div>
+                            <div class="delivery-title">Return Delivery</div>
+                            <div class="delivery-link">Free 30 days Delivery Return. <a href="#"
+                                    class="delivery-link">Details</a></div>
                         </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="footer-link-wrap">
-                            <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Services</h6>
-                            <ul class="p-0 d-flex flex-column gap-3 ">
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">FAQ</li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Shipping
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Tracking
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Returns
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="footer-link-wrap">
-                            <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Follow Us</h6>
-                            <ul class="p-0 d-flex flex-column gap-3 ">
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Facebook
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Instagram
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">YouTube
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Pinterest
-                                </li>
-                                <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Twitter
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        .
                     </div>
                 </div>
+
             </div>
+            <div class="container my-5">
+                <ul class="nav nav-tabs border-0 mb-4" id="productTab">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-target="#description">Description</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-target="#reviews">Reviews</button>
+                    </li>
+                </ul>
+
+                <div id="description" class="tab-content active">
+                    <h5 class="fw-semibold mb-3">Product Description</h5>
+                    <p>When it's colder than the far side of the moon and spitting rain too, you've still got to look
+                        good.
+                        From water-repellent leather to a rugged outsole, the Lunar Force 1 adapts AF-1 style, so you
+                        can
+                        keep your flame burning when the weather hits...</p>
+
+                    <h5 class="fw-semibold mt-4">Benefits</h5>
+                    <ul class="list-unstyled">
+                        <li>✅ Durable leather is easily cleanable so you can keep your look fresh.</li>
+                        <li>✅ Water-repellent finish and internal membrane help keep your feet dry.</li>
+                        <li>✅ Toe piece with star pattern adds durability.</li>
+                        <li>✅ Synthetic insulation helps keep you warm.</li>
+                        <li>✅ Originally designed for performance hoops, the Air unit delivers lightweight cushioning.
+                        </li>
+                        <li>✅ Plush tongue wraps over the ankle to help keep out the moisture and cold.</li>
+                        <li>✅ Rubber outsole with aggressive traction pattern adds durable grip.</li>
+                        <li>✅ Durable leather is easily cleanable so you can keep your look fresh.</li>
+                    </ul>
+
+                    <h5 class="fw-semibold mt-4">Product Details</h5>
+                    <ul class="list-unstyled">
+                        <li>✅ Not intended for use as Personal Protective Equipment (PPE)</li>
+                        <li>✅ Water-repellent finish and internal membrane help keep your feet dry.</li>
+                    </ul>
+
+                    <h5 class="fw-semibold mt-4">More Details</h5>
+                    <ul class="list-unstyled">
+                        <li>✅ Lunarlon midsole delivers ultra-plush responsiveness</li>
+                        <li>✅ Encapsulated Air-Sole heel unit for lightweight cushioning</li>
+                        <li>✅ Colour Shown: Ale Brown/Black/Goldtone/Ale Brown</li>
+                        <li>✅ Style: 805899-202</li>
+                    </ul>
+                </div>
+
+                <div id="reviews" class="tab-content" style="display:none;">
+                    <p class="text-muted">No reviews yet. Be the first to review this product!</p>
+                </div>
+            </div>
+
         </div>
-    </footer>
-    <!-- footer section end  -->
+
+        <!-- footer section start  -->
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+                    <h4 class="font-Secondary-400 fs-32 text-white text-center pb-5">Style Maven</h4>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="footer-link-wrap">
+                                <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Company
+                                </h6>
+                                <ul class="p-0 d-flex flex-column gap-3 ">
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">About
+                                        Us
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Our
+                                        Team
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Our
+                                        Blog
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">Gift
+                                        Cards
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        Contact
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-link-wrap">
+                                <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Services
+                                </h6>
+                                <ul class="p-0 d-flex flex-column gap-3 ">
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">FAQ
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        Shipping
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        Tracking
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        Returns
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-link-wrap">
+                                <h6 class="footer-link-head text-white font-primary-500 text-uppercase pb-3">Follow Us
+                                </h6>
+                                <ul class="p-0 d-flex flex-column gap-3 ">
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        Facebook
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        Instagram
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        YouTube
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        Pinterest
+                                    </li>
+                                    <li class=" font-Secondary-400 text-white text-decoration-none list-unstyled">
+                                        Twitter
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            .
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end  -->
 
 
 
@@ -246,10 +389,11 @@
 
 
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="js/script.js"></script>
 
 </body>
 

@@ -109,7 +109,7 @@ function updateQuantity(amount) {
 
 const swiper = new Swiper('.shopSwiper', {
   slidesPerView: 3,
-  spaceBetween: 20,
+  spaceBetween: 30,
   scrollbar: {
     el: '.swiper-scrollbar',
     hide: false,
@@ -146,7 +146,64 @@ colorOptions.forEach(option => {
     console.log('Selected color:', selectedColor);
   });
 });
-// clickable color 
+// clickable color
+
+// product lovers 
+let likeCount = 109;
+const likeBtn = document.getElementById('likeBtn');
+const likeCountSpan = document.getElementById('likeCount');
+
+likeBtn.addEventListener('click', () => {
+  likeCount++;
+  likeCountSpan.textContent = likeCount;
+});
+
+
+// product color picker 
+const options = document.querySelectorAll('.color-circle');
+
+options.forEach(option => {
+  option.addEventListener('click', () => {
+    options.forEach(o => o.classList.remove('selected'));
+    option.classList.add('selected');
+    const color = option.getAttribute('data-color');
+    console.log('Selected color:', color);
+  });
+});
+
+// product radio 
+const optionss = document.querySelectorAll('.size-option');
+optionss.forEach(option => {
+  option.addEventListener('click', () => {
+    optionss.forEach(o => o.classList.remove('active'));
+    option.classList.add('active');
+  });
+});
+
+// product plus minus 
+let quantity = 5;
+
+function updateQuantity() {
+  document.getElementById('quantity').textContent = quantity;
+}
+
+function increaseQty() {
+  quantity++;
+  updateQuantity();
+}
+
+function decreaseQty() {
+  if (quantity > 1) {
+    quantity--;
+    updateQuantity();
+  }
+}
+
+// image gallery 
+function changeImage(element) {
+  const mainImage = document.getElementById("mainImage");
+  mainImage.src = element.src;
+}
 
 
 
