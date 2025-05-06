@@ -627,12 +627,9 @@ nav {
             @media (max-width:375px) {
                 flex-direction: column;
                 justify-content: left;
+                flex-wrap: nowrap;
             }
         }
-
-
-
-
 
     }
 }

@@ -542,6 +542,7 @@ nav .navbar-brand {
   .order-details .order-details-wrapper .order-count {
     flex-direction: column;
     justify-content: left;
+    flex-wrap: nowrap;
   }
 }
 
